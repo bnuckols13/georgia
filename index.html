@@ -1,0 +1,2257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depth Astrology Assessment — April 15, 1997</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bone: #F5F0E6;
+            --bone-dark: #E8E0D0;
+            --ink: #1A1612;
+            --ink-light: #2A2420;
+            --blood: #6B1C1C;
+            --blood-light: #8B2C2C;
+            --gold: #A6893A;
+            --gold-dim: #8A7030;
+            --silver: #8A8A8A;
+            --shadow: #2A2420;
+            --purple: #4B0082;
+            --teal: #20B2AA;
+            --copper: #B87333;
+            --green: #228B22;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: auto;
+        }
+
+        /* Ensure all ID targets have proper scroll margin */
+        [id] {
+            scroll-margin-top: 70px;
+        }
+
+        body {
+            background: var(--ink);
+            color: var(--bone);
+            font-family: 'EB Garamond', Georgia, serif;
+            font-size: 18px;
+            line-height: 1.75;
+            min-height: 100vh;
+            background-image: 
+                radial-gradient(ellipse at 15% 20%, rgba(107, 28, 28, 0.06) 0%, transparent 50%),
+                radial-gradient(ellipse at 85% 80%, rgba(166, 137, 58, 0.04) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(75, 0, 130, 0.03) 0%, transparent 70%);
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--gold);
+            text-shadow: 0 0 60px rgba(166, 137, 58, 0.3);
+        }
+
+        h2 {
+            font-size: clamp(1.4rem, 3vw, 1.8rem);
+            color: var(--gold);
+            margin: 3rem 0 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(166, 137, 58, 0.3);
+            letter-spacing: 0.2em;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: var(--bone);
+            margin: 2rem 0 1rem;
+            letter-spacing: 0.15em;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            color: var(--silver);
+            margin: 1.5rem 0 0.75rem;
+            letter-spacing: 0.1em;
+            font-style: italic;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+            hyphens: auto;
+        }
+
+        strong {
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        em {
+            font-style: italic;
+            color: rgba(245, 240, 230, 0.9);
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 4rem 2rem;
+            border-bottom: 1px solid rgba(166, 137, 58, 0.2);
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1px;
+            height: 60px;
+            background: linear-gradient(180deg, transparent, var(--gold), transparent);
+        }
+
+        .header-sigil {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2rem;
+            opacity: 0.8;
+        }
+
+        .subtitle {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--silver);
+            letter-spacing: 0.15em;
+            margin-top: 0.5rem;
+        }
+
+        .meta-info {
+            margin-top: 2rem;
+            font-size: 0.95rem;
+            color: rgba(245, 240, 230, 0.6);
+        }
+
+        .meta-info span {
+            display: inline-block;
+            margin: 0 1rem;
+        }
+
+        .quote-block {
+            max-width: 600px;
+            margin: 2.5rem auto;
+            padding: 1.5rem 2rem;
+            border-left: 2px solid var(--gold);
+            font-style: italic;
+            color: rgba(245, 240, 230, 0.7);
+            font-size: 1.05rem;
+        }
+
+        .quote-block cite {
+            display: block;
+            margin-top: 0.75rem;
+            font-style: normal;
+            color: var(--gold);
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(26, 22, 18, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(166, 137, 58, 0.2);
+            z-index: 100;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.5rem;
+            list-style: none;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        nav a {
+            color: var(--silver);
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-family: 'Cinzel', serif;
+            transition: color 0.3s ease;
+            padding: 0.5rem 0.75rem;
+            display: block;
+            cursor: pointer;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            color: var(--gold);
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 4rem;
+            padding-top: 2rem;
+            scroll-margin-top: 80px;
+        }
+
+        .section-number {
+            font-size: 0.75rem;
+            color: var(--gold);
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            opacity: 0.7;
+        }
+
+        /* Dividers */
+        .divider {
+            text-align: center;
+            margin: 3rem 0;
+            color: var(--gold);
+            font-family: 'Cinzel', serif;
+            letter-spacing: 0.5em;
+            font-size: 0.75rem;
+            opacity: 0.6;
+            scroll-margin-top: 80px;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '✧';
+            margin: 0 1rem;
+        }
+
+        .divider-line {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(166, 137, 58, 0.4), transparent);
+            margin: 2rem 0;
+        }
+
+        /* Planetary Cards */
+        .planet-card {
+            background: linear-gradient(145deg, rgba(42, 36, 32, 0.7), rgba(26, 22, 18, 0.9));
+            border: 1px solid rgba(166, 137, 58, 0.2);
+            border-radius: 3px;
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .planet-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            opacity: 0.5;
+        }
+
+        .planet-card.challenge {
+            border-color: rgba(107, 28, 28, 0.4);
+            box-shadow: inset 0 0 80px rgba(107, 28, 28, 0.08);
+        }
+
+        .planet-card.challenge::before {
+            background: linear-gradient(90deg, transparent, var(--blood), transparent);
+        }
+
+        .planet-card.benefic {
+            border-color: rgba(75, 0, 130, 0.3);
+            box-shadow: inset 0 0 80px rgba(75, 0, 130, 0.06);
+        }
+
+        .planet-card.benefic::before {
+            background: linear-gradient(90deg, transparent, var(--purple), transparent);
+        }
+
+        .planet-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .planet-sigil {
+            width: 140px;
+            height: 140px;
+            flex-shrink: 0;
+        }
+
+        .planet-title-block {
+            flex: 1;
+        }
+
+        .planet-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1.4rem;
+            letter-spacing: 0.2em;
+            color: var(--gold);
+            margin-bottom: 0.25rem;
+        }
+
+        .planet-subtitle {
+            font-style: italic;
+            color: var(--silver);
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .planet-position {
+            font-size: 0.9rem;
+            color: rgba(245, 240, 230, 0.7);
+            margin-bottom: 0.5rem;
+        }
+
+        .dignity-badge {
+            display: inline-block;
+            padding: 0.35rem 1rem;
+            background: rgba(166, 137, 58, 0.15);
+            border: 1px solid rgba(166, 137, 58, 0.3);
+            border-radius: 2px;
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            color: var(--gold);
+            font-family: 'Cinzel', serif;
+        }
+
+        .dignity-badge.weak {
+            background: rgba(107, 28, 28, 0.2);
+            border-color: rgba(107, 28, 28, 0.4);
+            color: #C66;
+        }
+
+        .dignity-badge.strong {
+            background: rgba(75, 0, 130, 0.2);
+            border-color: rgba(75, 0, 130, 0.4);
+            color: #9B7BC7;
+        }
+
+        .dignity-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        .dignity-table th {
+            text-align: left;
+            padding: 0.5rem;
+            border-bottom: 1px solid rgba(166, 137, 58, 0.3);
+            color: var(--gold);
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            font-size: 0.8rem;
+        }
+
+        .dignity-table td {
+            padding: 0.5rem;
+            border-bottom: 1px solid rgba(166, 137, 58, 0.1);
+            color: rgba(245, 240, 230, 0.8);
+        }
+
+        .dignity-table .positive {
+            color: var(--teal);
+        }
+
+        .dignity-table .negative {
+            color: var(--blood-light);
+        }
+
+        /* Clinical Boxes */
+        .clinical-box {
+            background: rgba(166, 137, 58, 0.08);
+            border-left: 3px solid var(--gold);
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .clinical-box.warning {
+            background: rgba(107, 28, 28, 0.1);
+            border-color: var(--blood);
+        }
+
+        .clinical-box.insight {
+            background: rgba(75, 0, 130, 0.08);
+            border-color: var(--purple);
+        }
+
+        .clinical-box-title {
+            font-family: 'Cinzel', serif;
+            font-size: 0.85rem;
+            letter-spacing: 0.15em;
+            color: var(--gold);
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .clinical-box.warning .clinical-box-title {
+            color: var(--blood-light);
+        }
+
+        .clinical-box.insight .clinical-box-title {
+            color: #9B7BC7;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: rgba(245, 240, 230, 0.85);
+        }
+
+        li::marker {
+            color: var(--gold);
+        }
+
+        /* Priority Markers */
+        .priority {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 1rem;
+            background: rgba(107, 28, 28, 0.25);
+            border: 1px solid rgba(107, 28, 28, 0.5);
+            border-radius: 2px;
+            font-size: 0.8rem;
+            letter-spacing: 0.15em;
+            color: #E55;
+            font-family: 'Cinzel', serif;
+            margin: 0.5rem 0;
+        }
+
+        .priority.secondary {
+            background: rgba(184, 115, 51, 0.2);
+            border-color: rgba(184, 115, 51, 0.4);
+            color: var(--copper);
+        }
+
+        .priority.gift {
+            background: rgba(32, 178, 170, 0.15);
+            border-color: rgba(32, 178, 170, 0.4);
+            color: var(--teal);
+        }
+
+        /* Synthesis Grid */
+        .synthesis-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .synthesis-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(42, 36, 32, 0.5);
+            border: 1px solid rgba(166, 137, 58, 0.15);
+        }
+
+        .synthesis-label {
+            font-size: 0.7rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--silver);
+            margin-bottom: 0.5rem;
+        }
+
+        .synthesis-value {
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+            color: var(--bone);
+        }
+
+        /* Treatment Tables */
+        .treatment-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        .treatment-table th {
+            background: rgba(166, 137, 58, 0.15);
+            padding: 0.75rem 1rem;
+            text-align: left;
+            font-family: 'Cinzel', serif;
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            color: var(--gold);
+            border-bottom: 1px solid rgba(166, 137, 58, 0.3);
+        }
+
+        .treatment-table td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid rgba(166, 137, 58, 0.1);
+            vertical-align: top;
+        }
+
+        .treatment-table tr:hover {
+            background: rgba(166, 137, 58, 0.05);
+        }
+
+        /* Day Practice Grid */
+        .day-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .day-card {
+            background: rgba(42, 36, 32, 0.6);
+            border: 1px solid rgba(166, 137, 58, 0.15);
+            padding: 1.5rem;
+        }
+
+        .day-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+            letter-spacing: 0.2em;
+            margin-bottom: 0.75rem;
+        }
+
+        .day-card.sunday .day-name { color: var(--gold); }
+        .day-card.monday .day-name { color: var(--silver); }
+        .day-card.tuesday .day-name { color: var(--blood-light); }
+        .day-card.wednesday .day-name { color: var(--copper); }
+        .day-card.thursday .day-name { color: var(--purple); }
+        .day-card.friday .day-name { color: var(--green); }
+        .day-card.saturday .day-name { color: #4A4A4A; }
+
+        .day-card ul {
+            margin: 0;
+            padding-left: 1.2rem;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            border-top: 1px solid rgba(166, 137, 58, 0.2);
+            margin-top: 4rem;
+        }
+
+        /* House Table Styles */
+        .house-wheel-container {
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+
+        .house-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        .house-table thead th {
+            background: linear-gradient(180deg, rgba(166, 137, 58, 0.2), rgba(166, 137, 58, 0.1));
+            padding: 1rem;
+            text-align: left;
+            font-family: 'Cinzel', serif;
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            color: var(--gold);
+            border-bottom: 2px solid rgba(166, 137, 58, 0.3);
+        }
+
+        .house-table tbody td {
+            padding: 0.85rem 1rem;
+            border-bottom: 1px solid rgba(166, 137, 58, 0.1);
+            vertical-align: middle;
+        }
+
+        .house-table .house-num {
+            font-family: 'Cinzel', serif;
+            font-size: 1.1rem;
+            color: var(--gold);
+            text-align: center;
+            width: 60px;
+        }
+
+        .house-table .empty-house td {
+            opacity: 0.5;
+        }
+
+        .house-table .stellium-row {
+            background: rgba(166, 137, 58, 0.08);
+        }
+
+        .house-table .stellium-row td {
+            border-bottom: 2px solid rgba(166, 137, 58, 0.3);
+        }
+
+        .sign {
+            font-size: 1rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 2px;
+        }
+
+        .sign.fire { color: #E07030; }
+        .sign.earth { color: #7A9A5A; }
+        .sign.air { color: #6A9AC0; }
+        .sign.water { color: #5A7A9A; }
+
+        .planet-pip {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            font-size: 0.9rem;
+            margin-right: 0.4rem;
+        }
+
+        .planet-pip.sun { background: rgba(166, 137, 58, 0.3); color: var(--gold); }
+        .planet-pip.moon { background: rgba(192, 192, 192, 0.3); color: #C0C0C0; }
+        .planet-pip.mercury { background: rgba(184, 115, 51, 0.3); color: var(--copper); }
+        .planet-pip.venus { background: rgba(34, 139, 34, 0.3); color: var(--green); }
+        .planet-pip.mars { background: rgba(107, 28, 28, 0.3); color: var(--blood-light); }
+        .planet-pip.jupiter { background: rgba(75, 0, 130, 0.3); color: #9B7BC7; }
+        .planet-pip.saturn { background: rgba(47, 79, 79, 0.3); color: #5A7A7A; }
+        .planet-pip.neptune { background: rgba(100, 149, 237, 0.3); color: #6495ED; }
+
+        /* Scorecard Styles */
+        .scorecard-container {
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+
+        .scorecard {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        .scorecard thead th {
+            background: linear-gradient(180deg, rgba(166, 137, 58, 0.2), rgba(166, 137, 58, 0.1));
+            padding: 0.75rem 0.5rem;
+            font-family: 'Cinzel', serif;
+            font-size: 0.7rem;
+            letter-spacing: 0.05em;
+            color: var(--gold);
+            border-bottom: 2px solid rgba(166, 137, 58, 0.3);
+        }
+
+        .scorecard thead th.total-col {
+            background: linear-gradient(180deg, rgba(166, 137, 58, 0.3), rgba(166, 137, 58, 0.15));
+        }
+
+        .scorecard tbody td {
+            padding: 0.6rem 0.4rem;
+            border-bottom: 1px solid rgba(166, 137, 58, 0.1);
+        }
+
+        .scorecard .planet-cell {
+            text-align: left;
+            padding-left: 0.75rem;
+            font-weight: 500;
+        }
+
+        .scorecard .dignity-positive {
+            color: var(--teal);
+            font-weight: 600;
+        }
+
+        .scorecard .dignity-negative {
+            color: var(--blood-light);
+            font-weight: 600;
+        }
+
+        .scorecard .subtotal-positive {
+            color: var(--teal);
+            background: rgba(32, 178, 170, 0.08);
+        }
+
+        .scorecard .subtotal-negative {
+            color: var(--blood-light);
+            background: rgba(107, 28, 28, 0.08);
+        }
+
+        .scorecard .total-cell {
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .scorecard .total-cell.strong {
+            color: var(--teal);
+            background: rgba(32, 178, 170, 0.15);
+            text-shadow: 0 0 10px rgba(32, 178, 170, 0.3);
+        }
+
+        .scorecard .total-cell.moderate {
+            color: var(--gold);
+            background: rgba(166, 137, 58, 0.1);
+        }
+
+        .scorecard .total-cell.weak {
+            color: var(--copper);
+            background: rgba(184, 115, 51, 0.1);
+        }
+
+        .scorecard .total-cell.challenge {
+            color: var(--blood-light);
+            background: rgba(107, 28, 28, 0.15);
+            text-shadow: 0 0 10px rgba(107, 28, 28, 0.3);
+        }
+
+        .scorecard .strong-planet {
+            background: rgba(32, 178, 170, 0.03);
+        }
+
+        .scorecard .weak-planet {
+            background: rgba(184, 115, 51, 0.03);
+        }
+
+        .scorecard .challenge-planet {
+            background: rgba(107, 28, 28, 0.05);
+        }
+
+        .scorecard-legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: rgba(42, 36, 32, 0.5);
+            border-radius: 3px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 2px;
+        }
+
+        .legend-color.strong { background: var(--teal); }
+        .legend-color.moderate { background: var(--gold); }
+        .legend-color.weak { background: var(--copper); }
+        .legend-color.challenge { background: var(--blood); }
+
+        .scorecard-key {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(42, 36, 32, 0.5);
+            border: 1px solid rgba(166, 137, 58, 0.15);
+        }
+
+        .scorecard-key h4 {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .key-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 0.75rem;
+            font-size: 0.85rem;
+        }
+
+        .key-grid div {
+            padding: 0.25rem 0;
+        }
+
+        /* Sect Summary Styles */
+        .sect-summary {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .sect-column {
+            padding: 1.5rem;
+            border-radius: 3px;
+        }
+
+        .sect-column.in-sect {
+            background: linear-gradient(145deg, rgba(166, 137, 58, 0.1), rgba(32, 178, 170, 0.05));
+            border: 1px solid rgba(166, 137, 58, 0.25);
+        }
+
+        .sect-column.out-sect {
+            background: linear-gradient(145deg, rgba(107, 28, 28, 0.08), rgba(75, 0, 130, 0.05));
+            border: 1px solid rgba(107, 28, 28, 0.25);
+        }
+
+        .sect-column h4 {
+            text-align: center;
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid rgba(166, 137, 58, 0.2);
+        }
+
+        .sect-planet {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.6rem 0;
+            border-bottom: 1px solid rgba(166, 137, 58, 0.08);
+        }
+
+        .sect-planet:last-child {
+            border-bottom: none;
+        }
+
+        .sect-planet span:nth-child(2) {
+            flex: 1;
+            font-size: 0.95rem;
+        }
+
+        .sect-status {
+            font-size: 0.75rem;
+            font-family: 'Cinzel', serif;
+            letter-spacing: 0.1em;
+            padding: 0.25rem 0.5rem;
+            border-radius: 2px;
+        }
+
+        .in-sect .sect-status {
+            color: var(--teal);
+            background: rgba(32, 178, 170, 0.15);
+        }
+
+        .out-sect .sect-status {
+            color: var(--copper);
+            background: rgba(184, 115, 51, 0.15);
+        }
+
+        .out-sect .sect-planet.challenge .sect-status {
+            color: var(--blood-light);
+            background: rgba(107, 28, 28, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .sect-summary {
+                grid-template-columns: 1fr;
+            }
+
+            .scorecard {
+                font-size: 0.75rem;
+            }
+
+            .scorecard thead th {
+                padding: 0.5rem 0.25rem;
+                font-size: 0.6rem;
+            }
+
+            .scorecard tbody td {
+                padding: 0.4rem 0.25rem;
+            }
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: var(--silver);
+            text-align: center;
+        }
+
+        .footer-sigil {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1.5rem;
+            opacity: 0.5;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .planet-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .planet-sigil {
+                width: 120px;
+                height: 120px;
+            }
+
+            nav ul {
+                gap: 0.25rem 1rem;
+            }
+
+            nav a {
+                font-size: 0.7rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-in {
+            animation: fadeIn 0.6s ease forwards;
+        }
+
+        /* Scroll animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Spare-style flourish */
+        .spare-flourish {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            opacity: 0.1;
+        }
+
+        .spare-flourish.tl { top: 10px; left: 10px; }
+        .spare-flourish.br { bottom: 10px; right: 10px; transform: rotate(180deg); }
+    </style>
+</head>
+<body>
+
+<header>
+    <svg class="header-sigil" viewBox="0 0 200 200">
+        <!-- Composite sigil representing the whole chart -->
+        <defs>
+            <filter id="headerGlow">
+                <feGaussianBlur stdDeviation="2"/>
+            </filter>
+        </defs>
+        <!-- Central eye -->
+        <circle cx="100" cy="100" r="20" fill="none" stroke="#A6893A" stroke-width="2" filter="url(#headerGlow)"/>
+        <circle cx="100" cy="100" r="6" fill="#A6893A"/>
+        <!-- Cardinal cross -->
+        <path d="M100 40 L100 70 M100 130 L100 160 M40 100 L70 100 M130 100 L160 100" stroke="#A6893A" stroke-width="1.5" opacity="0.7"/>
+        <!-- Fire triangle -->
+        <path d="M100 50 L130 90 L70 90 Z" fill="none" stroke="#6B1C1C" stroke-width="1" opacity="0.5"/>
+        <!-- Angular markers -->
+        <circle cx="100" cy="40" r="4" fill="none" stroke="#A6893A" stroke-width="1"/>
+        <circle cx="40" cy="100" r="4" fill="none" stroke="#C0C0C0" stroke-width="1"/>
+        <circle cx="160" cy="100" r="4" fill="none" stroke="#4B0082" stroke-width="1"/>
+        <!-- Outer ring -->
+        <circle cx="100" cy="100" r="70" fill="none" stroke="#A6893A" stroke-width="0.5" opacity="0.4"/>
+        <!-- Automatic flourishes -->
+        <path d="M35 35 Q50 25, 55 40 Q48 55, 35 50" fill="none" stroke="#A6893A" stroke-width="0.5" opacity="0.3"/>
+        <path d="M165 165 Q150 175, 145 160 Q152 145, 165 150" fill="none" stroke="#A6893A" stroke-width="0.5" opacity="0.3"/>
+    </svg>
+    <h1>Depth Astrology Assessment</h1>
+    <div class="meta-info">
+        <span><strong>Birth:</strong> April 15, 1997 — 12:05 PM EDT</span>
+        <span><strong>Location:</strong> Peterborough, NH</span>
+        <span><strong>Assessment:</strong> November 21, 2025</span>
+    </div>
+    <div class="quote-block">
+        "Hidden in the labyrinth of the Alphabet is my sacred name, the Sigil of all things unknown."
+        <cite>— Austin Osman Spare</cite>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a onclick="document.getElementById('sect').scrollIntoView()">Sect</a></li>
+        <li><a onclick="document.getElementById('planets').scrollIntoView()">Planets</a></li>
+        <li><a onclick="document.getElementById('patterns').scrollIntoView()">Patterns</a></li>
+        <li><a onclick="document.getElementById('elements').scrollIntoView()">Elements</a></li>
+        <li><a onclick="document.getElementById('synthesis').scrollIntoView()">Synthesis</a></li>
+        <li><a onclick="document.getElementById('remediation').scrollIntoView()">Remediation</a></li>
+        <li><a onclick="document.getElementById('prognosis').scrollIntoView()">Prognosis</a></li>
+        <li><a onclick="document.getElementById('tables').scrollIntoView()">Tables</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+
+    <!-- SECTION 1: SECT ANALYSIS -->
+    <section id="sect" class="reveal">
+        <p class="section-number">Section I</p>
+        <h2>Chart Sect Analysis</h2>
+        
+        <h3>Diurnal Chart (Day Birth)</h3>
+        <p>The Sun rises above the horizon at 25°43' Aries in the 10th House, marking this as a <strong>diurnal</strong> (day) chart. In Hellenistic astrology, sect determines which planets work with the native and which present challenges—the cosmic team assignment that shapes the entire psychological landscape.</p>
+
+        <div class="clinical-box">
+            <p class="clinical-box-title">Sect Distribution</p>
+            <p><strong>In-Sect (Comfortable/Supported):</strong></p>
+            <ul>
+                <li>☉ <strong>Sun</strong> — Sect Leader, Diurnal Light</li>
+                <li>♃ <strong>Jupiter</strong> — Diurnal Benefic, PRIMARY SUPPORT</li>
+                <li>♄ <strong>Saturn</strong> — Diurnal Malefic, Moderated</li>
+            </ul>
+            <p><strong>Out-of-Sect (Challenged/Intensified):</strong></p>
+            <ul>
+                <li>☽ <strong>Moon</strong> — Nocturnal Light in Day Chart</li>
+                <li>♀ <strong>Venus</strong> — Nocturnal Benefic in Day Chart</li>
+                <li>♂ <strong>Mars</strong> — Nocturnal Malefic in Day Chart, PRIMARY CHALLENGE</li>
+            </ul>
+        </div>
+
+        <div class="clinical-box warning">
+            <p class="clinical-box-title">Critical Sect Insight</p>
+            <p>Mars is the <strong>out-of-sect malefic</strong> in this diurnal chart. According to traditional doctrine, Mars in a day chart—especially retrograde and placed in Virgo—represents the primary challenge planet. This Mars is BOTH retrograde AND analytical, creating significant tension around action, anger, assertion, and the martial impulse.</p>
+            <p><strong>Clinical Implication:</strong> Mars out-of-sect suggests profound difficulties with direct anger expression, healthy assertion and boundaries, taking effective action, conflict engagement, and sexuality/desire.</p>
+        </div>
+    </section>
+
+    <div class="divider">✧</div>
+
+    <!-- SECTION 2: PLANETARY ASSESSMENTS -->
+    <section id="planets" class="reveal">
+        <p class="section-number">Section II</p>
+        <h2>Planetary Strength Assessment</h2>
+
+        <p>Each planet is evaluated using the classical dignity system—essential dignities (sign placement) and accidental dignities (house, motion, aspects). This scoring reveals where psychic energy flows freely and where it encounters friction, resistance, or transformation.</p>
+
+        <!-- SUN -->
+        <div class="planet-card">
+            <svg class="spare-flourish tl" viewBox="0 0 30 30">
+                <path d="M5 25 Q5 5, 25 5" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                <circle cx="25" cy="5" r="1.5" fill="currentColor"/>
+            </svg>
+            <div class="planet-header">
+                <svg class="planet-sigil" viewBox="0 0 200 200">
+                    <defs>
+                        <filter id="sunGlow">
+                            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <circle cx="100" cy="100" r="25" fill="none" stroke="#A6893A" stroke-width="2.5" filter="url(#sunGlow)"/>
+                    <circle cx="100" cy="100" r="10" fill="#A6893A"/>
+                    <circle cx="100" cy="100" r="4" fill="#1A1612"/>
+                    <g stroke="#A6893A" stroke-width="1.5">
+                        <line x1="100" y1="30" x2="100" y2="65"/>
+                        <line x1="100" y1="135" x2="100" y2="170"/>
+                        <line x1="30" y1="100" x2="65" y2="100"/>
+                        <line x1="135" y1="100" x2="170" y2="100"/>
+                    </g>
+                    <g stroke="#A6893A" stroke-width="1" opacity="0.7">
+                        <line x1="50" y1="50" x2="73" y2="73"/>
+                        <line x1="150" y1="50" x2="127" y2="73"/>
+                        <line x1="50" y1="150" x2="73" y2="127"/>
+                        <line x1="150" y1="150" x2="127" y2="127"/>
+                    </g>
+                    <path d="M60 75 Q45 45, 50 70 Q48 90, 60 85" fill="none" stroke="#6B1C1C" stroke-width="2"/>
+                    <path d="M140 75 Q155 45, 150 70 Q152 90, 140 85" fill="none" stroke="#6B1C1C" stroke-width="2"/>
+                    <path d="M100 20 L115 40 L85 40 Z" fill="none" stroke="#A6893A" stroke-width="1"/>
+                    <path d="M75 140 Q55 165, 80 180 Q100 190, 120 180 Q145 165, 125 140" fill="none" stroke="#A6893A" stroke-width="0.8" opacity="0.5"/>
+                </svg>
+                <div class="planet-title-block">
+                    <h3 class="planet-name">☉ Sol Exaltatus</h3>
+                    <p class="planet-subtitle">The Visible Leader</p>
+                    <p class="planet-position">Sun in Aries 25°43' — 10th House (Angular)</p>
+                    <span class="dignity-badge strong">+20 VERY STRONG</span>
+                </div>
+            </div>
+
+            <table class="dignity-table">
+                <tr>
+                    <th>Essential Dignities</th>
+                    <th>Accidental Dignities</th>
+                </tr>
+                <tr>
+                    <td><span class="positive">Exaltation (Aries): +4</span></td>
+                    <td><span class="positive">10th House (Angular): +5</span></td>
+                </tr>
+                <tr>
+                    <td><span class="positive">Triplicity (Fire): +3</span></td>
+                    <td><span class="positive">Direct Motion: +4</span></td>
+                </tr>
+                <tr>
+                    <td><span class="positive">Direct Motion: +4</span></td>
+                    <td><span class="positive">In-Sect (Sect Leader): Strong</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Essential Total: +11</strong></td>
+                    <td><strong>Accidental Total: +9</strong></td>
+                </tr>
+            </table>
+
+            <h4>Clinical/Archetypal Interpretation</h4>
+            <p>The Sun is <strong>highly dignified</strong> in this chart—exalted in Aries, angular in the 10th House, and serving as Sect Leader. This is a chart of someone with a <em>strong, clear sense of self and purpose</em>. The exalted Sun in the 10th suggests natural leadership capacity, a powerful Self-Ego axis in Jungian terms, identity through achievement and vocation, and the pioneer/warrior archetype expressed through courage and initiative.</p>
+
+            <div class="clinical-box">
+                <p class="clinical-box-title">Therapeutic Considerations</p>
+                <p>This person likely has good ego strength and resilience. They may struggle with being "too much" for others—the bright Sun can blind. Difficulty with receptivity is probable given all that fire/yang energy. The father archetype and relationship are likely significant. <strong>Vocation/calling is CENTRAL to identity and psychological health.</strong></p>
+            </div>
+
+            <h4>Shadow Integration</h4>
+            <p>The shadow of the exalted Sun includes grandiosity and inflation risk, difficulty with vulnerability or asking for help, impatience with others' slower pace, and burnout from relentless drive. Integration work involves learning to balance solar drive with lunar receptivity, developing patience and collaboration, and honoring rest and reflection.</p>
+        </div>
+
+        <!-- MOON -->
+        <div class="planet-card">
+            <div class="planet-header">
+                <svg class="planet-sigil" viewBox="0 0 200 200">
+                    <defs>
+                        <filter id="moonGlow">
+                            <feGaussianBlur stdDeviation="3"/>
+                        </filter>
+                    </defs>
+                    <g stroke="#C0C0C0" stroke-width="1.2" opacity="0.6">
+                        <path d="M100 30 Q95 50, 100 55"/>
+                        <path d="M130 40 Q115 55, 115 60"/>
+                        <path d="M155 65 Q135 70, 130 75"/>
+                        <path d="M165 100 Q145 95, 140 100"/>
+                        <path d="M155 135 Q135 125, 130 125"/>
+                        <path d="M130 160 Q115 145, 115 140"/>
+                        <path d="M100 170 Q95 150, 100 145"/>
+                        <path d="M70 160 Q85 145, 85 140"/>
+                        <path d="M45 135 Q65 125, 70 125"/>
+                        <path d="M35 100 Q55 95, 60 100"/>
+                        <path d="M45 65 Q65 70, 70 75"/>
+                        <path d="M70 40 Q85 55, 85 60"/>
+                    </g>
+                    <path d="M85 65 Q50 100, 85 135 Q105 100, 85 65" fill="none" stroke="#C0C0C0" stroke-width="3" filter="url(#moonGlow)"/>
+                    <circle cx="90" cy="90" r="5" fill="#D4AF37"/>
+                    <path d="M102 100 Q112 112, 100 120" fill="none" stroke="#C0C0C0" stroke-width="1.5"/>
+                    <path d="M92 150 Q82 143, 82 153 Q82 162, 100 175 Q118 162, 118 153 Q118 143, 108 150 Q100 156, 92 150" fill="none" stroke="#D4AF37" stroke-width="1.5"/>
+                    <path d="M35 90 L25 100 L35 110" fill="none" stroke="#D4AF37" stroke-width="1"/>
+                </svg>
+                <div class="planet-title-block">
+                    <h3 class="planet-name">☽ Luna Theatrica</h3>
+                    <p class="planet-subtitle">The Theatrical Heart</p>
+                    <p class="planet-position">Moon in Leo 6°35' — 1st House (Angular)</p>
+                    <span class="dignity-badge">+10 MODERATELY STRONG</span>
+                </div>
+            </div>
+
+            <table class="dignity-table">
+                <tr>
+                    <th>Essential Dignities</th>
+                    <th>Accidental Dignities</th>
+                </tr>
+                <tr>
+                    <td><span class="positive">Triplicity (Fire): +3</span></td>
+                    <td><span class="positive">1st House (Angular): +5</span></td>
+                </tr>
+                <tr>
+                    <td>Peregrine otherwise</td>
+                    <td><span class="positive">Direct Motion: +4</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="negative">Out-of-Sect: penalty</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Essential Total: +3</strong></td>
+                    <td><strong>Accidental Total: ~+7</strong></td>
+                </tr>
+            </table>
+
+            <h4>Clinical/Archetypal Interpretation</h4>
+            <p>Leo Moon in the 1st House means emotions are <strong>theatrical, visible, part of identity presentation</strong>. This person wears their heart on their sleeve, but in a proud, dignified way. Core emotional needs include recognition, appreciation, being <em>seen</em> emotionally, creative self-expression of feelings, and warmth in relationships.</p>
+
+            <p>The Moon being out-of-sect in a day chart suggests emotional needs feel more urgent and demanding, there may be a sense that emotions are "too much" or overwhelming, and difficulty with emotional regulation when stressed. The inner child needs extra care and attention.</p>
+
+            <div class="clinical-box">
+                <p class="clinical-box-title">Sun-Moon Relationship</p>
+                <p>Both luminaries are in fire signs (Aries Sun, Leo Moon) and both are angular—identity and emotions are PUBLIC. The Sun-Moon sextile (roughly 60°) is harmonious, suggesting <strong>integration is easier</strong>—what this person feels tends to align with who they are. Creative emotional expression through art, performance, or play is deeply healing.</p>
+            </div>
+
+            <h4>Mother Archetype</h4>
+            <p>The placement suggests a warm, dramatic, perhaps theatrical mother—mother as performer or creative person. There may have been a felt need to perform for mother's love. The maternal figure was likely generous and loving, but possibly demanding.</p>
+        </div>
+
+        <!-- MARS - PRIMARY CHALLENGE -->
+        <div class="planet-card challenge">
+            <div class="planet-header">
+                <svg class="planet-sigil" viewBox="0 0 200 200">
+                    <path d="M100 165 L100 85" stroke="#6B1C1C" stroke-width="3.5"/>
+                    <path d="M100 85 Q125 60, 100 40 Q75 60, 100 85" fill="none" stroke="#6B1C1C" stroke-width="3"/>
+                    <path d="M100 100 Q135 88, 122 65 Q100 48, 78 65 Q55 88, 78 112 Q100 135, 122 112 Q140 88, 115 70" fill="none" stroke="#2A2420" stroke-width="1.5"/>
+                    <path d="M50 120 L62 108 L50 96" fill="none" stroke="#6B1C1C" stroke-width="1.2"/>
+                    <path d="M150 120 L138 108 L150 96" fill="none" stroke="#6B1C1C" stroke-width="1.2"/>
+                    <path d="M55 75 L67 80 L55 88" fill="none" stroke="#2A2420" stroke-width="1"/>
+                    <path d="M145 75 L133 80 L145 88" fill="none" stroke="#2A2420" stroke-width="1"/>
+                    <ellipse cx="100" cy="145" rx="40" ry="12" fill="none" stroke="#6B1C1C" stroke-width="1.5" stroke-dasharray="6,4"/>
+                    <circle cx="100" cy="100" r="18" fill="none" stroke="#2A2420" stroke-width="2"/>
+                    <path d="M90 90 L110 110 M110 90 L90 110" stroke="#6B1C1C" stroke-width="2.5"/>
+                    <path d="M70 175 L78 162 L86 175 L94 162 L102 175 L110 162 L118 175 L126 162 L134 175" fill="none" stroke="#6B1C1C" stroke-width="1" opacity="0.5"/>
+                    <path d="M65 178 Q52 162, 58 148" fill="none" stroke="#2A2420" stroke-width="1.5"/>
+                    <path d="M135 178 Q148 162, 142 148" fill="none" stroke="#2A2420" stroke-width="1.5"/>
+                </svg>
+                <div class="planet-title-block">
+                    <h3 class="planet-name">♂ Mars Inversus</h3>
+                    <p class="planet-subtitle">The Internalized Warrior</p>
+                    <p class="planet-position">Mars in Virgo 17°58' — 3rd House (Cadent) — RETROGRADE</p>
+                    <span class="priority">⚠ PRIMARY THERAPEUTIC FOCUS</span>
+                    <br><span class="dignity-badge weak">+1 VERY WEAK</span>
+                </div>
+            </div>
+
+            <table class="dignity-table">
+                <tr>
+                    <th>Essential Dignities</th>
+                    <th>Accidental Dignities</th>
+                </tr>
+                <tr>
+                    <td><span class="positive">Triplicity (Earth): +3</span></td>
+                    <td>3rd House (Cadent): +3</td>
+                </tr>
+                <tr>
+                    <td>Peregrine otherwise</td>
+                    <td><span class="negative">RETROGRADE: -5</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="negative">Out-of-Sect Malefic: MAXIMUM</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Essential Total: +3</strong></td>
+                    <td><strong>Accidental Total: -2</strong></td>
+                </tr>
+            </table>
+
+            <div class="clinical-box warning">
+                <p class="clinical-box-title">Core Challenge Configuration</p>
+                <p>This is the <strong>most challenged planet</strong> in the chart. Mars retrograde, out-of-sect, in analytical Virgo represents the psychological work that defines this life:</p>
+                <ul>
+                    <li><strong>Anger expression</strong> — Turned inward, becomes self-attack</li>
+                    <li><strong>Assertion</strong> — Cannot effectively stand up for self</li>
+                    <li><strong>Desire</strong> — Confused, guilty, or paralyzed around wanting</li>
+                    <li><strong>Action</strong> — Overthinks, second-guesses, cannot just DO</li>
+                    <li><strong>Sexuality</strong> — Compulsive or repressed (retrograde = obsessive)</li>
+                    <li><strong>Conflict</strong> — Avoids or explodes with no middle ground</li>
+                </ul>
+            </div>
+
+            <h4>Virgo Mars Problems</h4>
+            <p>Mars in Virgo criticizes action before taking it—analysis paralysis. Perfectionism prevents doing: "not good enough to try." Anger gets expressed as criticism, nitpicking, fault-finding. A service/sacrifice complex develops where giving is acceptable but receiving is not. Health anxiety emerges as Mars energy goes into worry about the body.</p>
+
+            <h4>Retrograde Impact</h4>
+            <p>The retrograde motion internalizes aggression into self-hatred and self-attack. Compulsive thoughts cycle around anger, sex, and desire. Rumination replays past conflicts endlessly. Sexual expression may become obsessive OR repressed depending on context. Action is delayed—too late or not at all.</p>
+
+            <h4>3rd House Placement</h4>
+            <p>Angry thoughts manifest as critical self-talk. Conflict with siblings is possible. Communication becomes a weapon through cutting words. Learning and school may have involved conflict. Short trips and daily life become triggers for anger.</p>
+
+            <div class="clinical-box">
+                <p class="clinical-box-title">Therapeutic Priority: Mars Integration</p>
+                <ul>
+                    <li><strong>Anger Work:</strong> Permission to feel and express anger; developing healthy assertion skills; body-based anger release; understanding anger as information</li>
+                    <li><strong>Action/Agency:</strong> Cognitive-behavioral work on perfectionism; practicing "imperfect action"; building tolerance for mistakes</li>
+                    <li><strong>Sexuality:</strong> Exploring desire without shame; understanding the retrograde's compulsive quality; integrating healthy expression</li>
+                    <li><strong>Self-Compassion:</strong> Countering Virgo's self-criticism; developing internal warmth; self-forgiveness practices</li>
+                    <li><strong>Somatic Work:</strong> Body-based practices are ESSENTIAL; releasing held anger from muscles; martial arts, dance, physical expression</li>
+                </ul>
+            </div>
+
+            <h4>Shadow/Risk Factors</h4>
+            <p>Depression (anger turned inward), passive-aggression, eating disorders (Virgo body control), self-harm or self-sabotage, relationship violence (if anger erupts uncontained), sexual compulsivity or complete shutdown.</p>
+        </div>
+
+        <!-- MERCURY -->
+        <div class="planet-card">
+            <div class="planet-header">
+                <svg class="planet-sigil" viewBox="0 0 200 200">
+                    <defs>
+                        <filter id="burnFilter">
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feColorMatrix type="matrix" values="1 0.3 0 0 0  0 0.6 0 0 0  0 0 0.3 0 0  0 0 0 1 0"/>
+                        </filter>
+                    </defs>
+                    <circle cx="100" cy="38" r="28" fill="none" stroke="#D4AF37" stroke-width="3" filter="url(#burnFilter)" opacity="0.8"/>
+                    <circle cx="100" cy="38" r="10" fill="#D4AF37" opacity="0.6"/>
+                    <path d="M80 55 L88 80" stroke="#D4AF37" stroke-width="1" opacity="0.4"/>
+                    <path d="M120 55 L112 80" stroke="#D4AF37" stroke-width="1" opacity="0.4"/>
+                    <path d="M100 58 L100 78" stroke="#D4AF37" stroke-width="1.5" opacity="0.5"/>
+                    <circle cx="100" cy="100" r="24" fill="none" stroke="#B87333" stroke-width="2.5"/>
+                    <path d="M100 124 L100 165" stroke="#B87333" stroke-width="2.5"/>
+                    <path d="M82 152 L118 152" stroke="#B87333" stroke-width="2"/>
+                    <path d="M72 85 Q55 60, 72 42 Q88 30, 100 42" fill="none" stroke="#B87333" stroke-width="2" opacity="0.35"/>
+                    <path d="M128 85 Q145 60, 128 42 Q112 30, 100 42" fill="none" stroke="#B87333" stroke-width="2" opacity="0.35"/>
+                    <path d="M125 105 Q148 118, 135 135 Q118 148, 100 135 Q82 120, 95 102 Q108 88, 100 98" fill="none" stroke="#4A4A4A" stroke-width="1.2"/>
+                    <path d="M65 172 Q58 185, 78 192 Q100 198, 122 192 Q142 185, 135 172" fill="none" stroke="#4A4A4A" stroke-width="1.5"/>
+                    <text x="55" y="188" fill="#B87333" font-size="7" opacity="0.25" font-family="serif" font-style="italic">thoughts</text>
+                    <text x="115" y="188" fill="#B87333" font-size="7" opacity="0.18" font-family="serif" font-style="italic">unheard</text>
+                </svg>
+                <div class="planet-title-block">
+                    <h3 class="planet-name">☿ Mercurius Obscuratus</h3>
+                    <p class="planet-subtitle">The Obscured Mind</p>
+                    <p class="planet-position">Mercury in Taurus 9°38' — 10th House (Angular) — RETROGRADE & UNDER THE BEAMS</p>
+                    <span class="priority secondary">⚠ SECONDARY THERAPEUTIC FOCUS</span>
+                    <br><span class="dignity-badge weak">-1 WEAK</span>
+                </div>
+            </div>
+
+            <table class="dignity-table">
+                <tr>
+                    <th>Essential Dignities</th>
+                    <th>Accidental Dignities</th>
+                </tr>
+                <tr>
+                    <td><span class="positive">Triplicity (Earth): +3</span></td>
+                    <td><span class="positive">10th House (Angular): +5</span></td>
+                </tr>
+                <tr>
+                    <td>Peregrine otherwise</td>
+                    <td><span class="negative">RETROGRADE: -5</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="negative">Under the Beams: -4</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Essential Total: +3</strong></td>
+                    <td><strong>Accidental Total: -4</strong></td>
+                </tr>
+            </table>
+
+            <div class="clinical-box warning">
+                <p class="clinical-box-title">Under the Beams — Critical Condition</p>
+                <p>When a planet is between 8° and 15° from the Sun (Mercury is 13.9° away), it is said to be "under the beams"—partially obscured by the Sun's overwhelming light. The planet's significations become <strong>weakened, hidden, overshadowed, burned</strong>.</p>
+                <p>With an EXALTED Sun burning up a retrograde Mercury: Identity is strong, clear, powerful—but thinking is obscured, doubted, internalized. Others see the LEADER (Sun), not the THINKER (Mercury). This person may be underestimated intellectually and could develop <strong>imposter syndrome around intelligence</strong>.</p>
+            </div>
+
+            <h4>Clinical Manifestations</h4>
+            <ul>
+                <li>Intellectual self-doubt despite strong identity</li>
+                <li>Feeling unheard or misunderstood</li>
+                <li>Ideas overshadowed by personality/presence</li>
+                <li>Communication anxiety and rumination</li>
+                <li>Thoughts feel "not good enough" compared to powerful self-image</li>
+            </ul>
+
+            <h4>Hidden Strengths</h4>
+            <p>Mercury retrograde often indicates <strong>inner wisdom</strong> and intuitive knowing. The person is thorough—doesn't miss details others skip. They build solid, lasting understanding and have great memory for concrete facts. Under the beams, thinking develops <em>independently</em>—original perspectives emerge from obscurity. Writing is often the preferred mode of communication.</p>
+
+            <div class="clinical-box">
+                <p class="clinical-box-title">Therapeutic Approach</p>
+                <p><strong>Validate intellectual capacity.</strong> This person is smarter than they feel. Help separate identity (Sun) from intellect (Mercury). Build confidence in cognitive gifts through written expression practices. Wednesday (Mercury day) is key for communication skill work.</p>
+            </div>
+        </div>
+
+        <!-- JUPITER - PRIMARY BENEFIC -->
+        <div class="planet-card benefic">
+            <div class="planet-header">
+                <svg class="planet-sigil" viewBox="0 0 200 200">
+                    <defs>
+                        <filter id="jupiterGlow">
+                            <feGaussianBlur stdDeviation="3"/>
+                        </filter>
+                        <linearGradient id="jupiterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#4B0082"/>
+                            <stop offset="100%" stop-color="#20B2AA"/>
+                        </linearGradient>
+                    </defs>
+                    <path d="M65 60 L65 140" stroke="url(#jupiterGrad)" stroke-width="3.5" filter="url(#jupiterGlow)"/>
+                    <path d="M50 85 L105 85 Q130 85, 142 100 Q155 120, 138 140 Q118 155, 92 138" fill="none" stroke="url(#jupiterGrad)" stroke-width="3.5" filter="url(#jupiterGlow)"/>
+                    <path d="M38 68 Q15 50, 35 32 Q55 20, 68 40" fill="none" stroke="#20B2AA" stroke-width="2"/>
+                    <path d="M162 68 Q185 50, 165 32 Q145 20, 132 40" fill="none" stroke="#20B2AA" stroke-width="2"/>
+                    <path d="M45 160 Q58 152, 72 160 Q85 168, 98 160 Q112 152, 125 160 Q138 168, 152 160" fill="none" stroke="#4B0082" stroke-width="1.8"/>
+                    <path d="M52 172 Q65 165, 78 172 Q92 180, 105 172 Q118 165, 132 172 Q145 180, 148 172" fill="none" stroke="#4B0082" stroke-width="1.2"/>
+                    <path d="M100 25 L138 48 L138 105 Q138 142, 100 165 Q62 142, 62 105 L62 48 Z" fill="none" stroke="#20B2AA" stroke-width="1" opacity="0.4"/>
+                    <ellipse cx="100" cy="55" rx="12" ry="7" fill="none" stroke="#4B0082" stroke-width="1.8"/>
+                    <circle cx="100" cy="55" r="3" fill="#20B2AA"/>
+                </svg>
+                <div class="planet-title-block">
+                    <h3 class="planet-name">♃ Jupiter Protector</h3>
+                    <p class="planet-subtitle">The Philosophical Guardian</p>
+                    <p class="planet-position">Jupiter in Aquarius 17°44' — 7th House (Angular)</p>
+                    <span class="priority gift">★ PRIMARY PROTECTIVE FACTOR</span>
+                    <br><span class="dignity-badge strong">+12 STRONG</span>
+                </div>
+            </div>
+
+            <table class="dignity-table">
+                <tr>
+                    <th>Essential Dignities</th>
+                    <th>Accidental Dignities</th>
+                </tr>
+                <tr>
+                    <td><span class="positive">Triplicity (Air): +3</span></td>
+                    <td><span class="positive">7th House (Angular): +5</span></td>
+                </tr>
+                <tr>
+                    <td>Peregrine otherwise</td>
+                    <td><span class="positive">Direct Motion: +4</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="positive">In-Sect (Diurnal Benefic): FULL POWER</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Essential Total: +3</strong></td>
+                    <td><strong>Accidental Total: +9</strong></td>
+                </tr>
+            </table>
+
+            <div class="clinical-box insight">
+                <p class="clinical-box-title">Primary Benefic Function</p>
+                <p>Jupiter in-sect and angular is the <strong>major protective element</strong> balancing the Mars challenges. As the diurnal benefic in a day chart, Jupiter works at FULL STRENGTH to protect, provides opportunities and lucky breaks, helps bounce back from difficulty, gives natural optimism and resilience, and attracts mentors, teachers, helpers.</p>
+            </div>
+
+            <h4>7th House Jupiter Gifts</h4>
+            <p>Partners become teachers and guides. This person attracts generous, philosophical partners—relationships bring growth and expansion. Marriage and partnership are blessed. Critically: <strong>counseling/therapy is effective</strong> because the 7th house signifies other people, including the therapeutic relationship.</p>
+
+            <h4>Aquarius Jupiter</h4>
+            <p>Progressive values around social justice and equality. An intellectual approach to meaning and faith. Community and friendship function as spiritual practice. Interest in technology and innovation. Humanitarian orientation.</p>
+
+            <h4>Therapeutic Asset</h4>
+            <p>This Jupiter is a <strong>major resource</strong> in treatment:</p>
+            <ul>
+                <li><strong>Natural Optimism:</strong> Can access hope even when depressed</li>
+                <li><strong>Intellectual Approach:</strong> Loves psychological learning, engages with concepts</li>
+                <li><strong>Relationship Medicine:</strong> The therapy relationship itself is healing</li>
+                <li><strong>Meaning-Making:</strong> Can find meaning in suffering; interested in big questions</li>
+            </ul>
+
+            <h4>Balancing Mars</h4>
+            <p>Jupiter roughly opposite Mars provides perspective on anger—can step back and reflect. Optimism counters depression. Social support emerges when isolation threatens. Expansion opens what Mars contracts.</p>
+        </div>
+
+        <!-- VENUS -->
+        <div class="planet-card">
+            <div class="planet-header">
+                <svg class="planet-sigil" viewBox="0 0 200 200">
+                    <circle cx="100" cy="80" r="30" fill="none" stroke="#228B22" stroke-width="2.5"/>
+                    <path d="M85 65 L75 52" stroke="#6B1C1C" stroke-width="1.5"/>
+                    <path d="M115 65 L125 52" stroke="#6B1C1C" stroke-width="1.5"/>
+                    <path d="M100 110 L100 165" stroke="#228B22" stroke-width="2.5"/>
+                    <path d="M80 140 L120 140" stroke="#228B22" stroke-width="2"/>
+                    <path d="M70 80 L60 70 L55 85 L65 90" fill="none" stroke="#8A8A8A" stroke-width="1"/>
+                    <path d="M130 80 L140 70 L145 85 L135 90" fill="none" stroke="#8A8A8A" stroke-width="1"/>
+                    <path d="M58 55 Q40 30, 48 50 Q52 65, 62 60" fill="none" stroke="#6B1C1C" stroke-width="1.8"/>
+                    <path d="M142 55 Q160 30, 152 50 Q148 65, 138 60" fill="none" stroke="#6B1C1C" stroke-width="1.8"/>
+                    <path d="M92 170 Q80 162, 80 175 Q80 185, 100 198 Q120 185, 120 175 Q120 162, 108 170 Q100 178, 92 170" fill="none" stroke="#FF69B4" stroke-width="1.5"/>
+                    <path d="M78 175 L72 170 M82 188 L78 195 M118 188 L122 195 M122 175 L128 170" stroke="#228B22" stroke-width="1"/>
+                </svg>
+                <div class="planet-title-block">
+                    <h3 class="planet-name">♀ Venus Vulnerata</h3>
+                    <p class="planet-subtitle">The Wounded Feminine</p>
+                    <p class="planet-position">Venus in Aries 29°09' — 10th House (Angular)</p>
+                    <span class="dignity-badge weak">+2 WEAK</span>
+                </div>
+            </div>
+
+            <p>Venus in detriment in Aries is <strong>awkward with traditional femininity, receptivity, and relationship</strong>. The core pattern: independent in love ("I don't need anyone"), direct and aggressive pursuit of what/who they want, uncomfortable with softness, vulnerability, neediness, quick to anger in relationships.</p>
+
+            <h4>Challenge</h4>
+            <p>Venus in detriment struggles to receive love gracefully, to be vulnerable or "soft," to compromise or accommodate, to maintain long-term harmony (wants conquest instead), and to express traditional feminine qualities.</p>
+
+            <div class="clinical-box">
+                <p class="clinical-box-title">Therapeutic Considerations</p>
+                <p>Attachment work is likely important—may have avoidant attachment style. Anger in relationships needs exploration. <strong>Learning receptivity and vulnerability is the growth edge.</strong> Values strength and independence, possibly overvalued as defenses.</p>
+            </div>
+        </div>
+
+        <!-- SATURN -->
+        <div class="planet-card">
+            <div class="planet-header">
+                <svg class="planet-sigil" viewBox="0 0 200 200">
+                    <path d="M100 45 L100 155" stroke="#2F4F4F" stroke-width="2.5"/>
+                    <path d="M75 80 L125 80" stroke="#2F4F4F" stroke-width="2"/>
+                    <path d="M100 45 Q140 35, 145 55 Q148 70, 135 78" fill="none" stroke="#2F4F4F" stroke-width="2.5"/>
+                    <path d="M135 78 L142 85" stroke="#696969" stroke-width="1.5" stroke-dasharray="3,2"/>
+                    <path d="M145 88 L150 95" stroke="#696969" stroke-width="1" stroke-dasharray="2,3"/>
+                    <path d="M65 60 Q50 35, 58 55 Q62 72, 72 65" fill="none" stroke="#6B1C1C" stroke-width="1.5"/>
+                    <path d="M135 60 Q150 35, 142 55 Q138 72, 128 65" fill="none" stroke="#6B1C1C" stroke-width="1.5"/>
+                    <path d="M88 120 L82 130 L90 135 L85 145" stroke="#696969" stroke-width="1"/>
+                    <path d="M112 120 L118 130 L110 135 L115 145" stroke="#696969" stroke-width="1"/>
+                    <path d="M100 160 L100 180 M92 172 L100 180 L108 172" stroke="#2F4F4F" stroke-width="1.5"/>
+                    <path d="M100 185 L100 195" stroke="#696969" stroke-width="1" stroke-dasharray="2,3"/>
+                </svg>
+                <div class="planet-title-block">
+                    <h3 class="planet-name">♄ Saturnus Impatiens</h3>
+                    <p class="planet-subtitle">The Impatient Elder</p>
+                    <p class="planet-position">Saturn in Aries 12°21' — 9th House (Cadent)</p>
+                    <span class="dignity-badge">+3 WEAK TO MODERATE</span>
+                </div>
+            </div>
+
+            <p>Saturn in fall in Aries means <strong>impatience with structure</strong>—"I want it NOW." Core challenges include difficulty with patience, discipline, and delayed gratification; wanting to skip steps and bypass process; rebelling against authority or limits; impulsiveness where caution is needed.</p>
+
+            <p>Because Saturn is the diurnal malefic in a day chart (in-sect), these challenges are more conscious and workable, less traumatic or overwhelming. They can be engaged deliberately as part of the "work" of life rather than catastrophe.</p>
+
+            <div class="clinical-box">
+                <p class="clinical-box-title">9th House Saturn</p>
+                <p>Questions the authority of belief systems. May have restrictive religious or philosophical background. Father issues related to education or values. Travel or higher education encounters obstacles. Risk of cynicism or rigidity in worldview. <strong>Growth edge:</strong> learning patience without losing initiative, building consistency while honoring spontaneity.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider">✧</div>
+
+    <!-- SECTION 3: PATTERNS -->
+    <section id="patterns" class="reveal">
+        <p class="section-number">Section III</p>
+        <h2>Aspect Patterns & Configurations</h2>
+
+        <h3>10th House Stellium</h3>
+        <p>Three planets concentrate in the 10th House of career and public identity: Sun 25° Aries, Mercury 9° Taurus (R), and Venus 29° Aries. This stellium indicates that <strong>vocation is central</strong> to this person's identity. Public role and career are where solar identity expresses. Communication and intellect are part of public work. Values and aesthetics are public matters.</p>
+
+        <div class="clinical-box">
+            <p class="clinical-box-title">Clinical Note</p>
+            <p>Career and vocation will be critical in treatment planning. Any work problems will significantly affect mental health. This person needs work that aligns with values, a leadership or visible role, creative and communicative outlets, and independence with autonomy.</p>
+        </div>
+
+        <h3>Angular Emphasis</h3>
+        <p>Triple angular emphasis—Sun in 10th, Moon in 1st, Jupiter in 7th—means this is someone who is <strong>seen</strong>. They cannot hide or be invisible. Naturally charismatic and noticeable, leadership roles feel natural, and performance/public presence is comfortable.</p>
+
+        <h3>Retrograde Emphasis</h3>
+        <p>Three retrograde planets—Mercury, Mars, and Pluto—indicate a <strong>significant inner life</strong>. Despite the fire emphasis, this person is introverted in important ways. Rumination and internal processing dominate. They may seem outgoing (Leo rising) but are deeply reflective. "Revisiting" themes are core to this life—the retrograde as perpetual review.</p>
+    </section>
+
+    <div class="divider">✧</div>
+
+    <!-- SECTION 4: ELEMENTS -->
+    <section id="elements" class="reveal">
+        <p class="section-number">Section IV</p>
+        <h2>Elemental & Modal Balance</h2>
+
+        <h3>Elemental Distribution</h3>
+        <div class="synthesis-grid">
+            <div class="synthesis-item">
+                <p class="synthesis-label">Fire</p>
+                <p class="synthesis-value">4 Planets</p>
+            </div>
+            <div class="synthesis-item">
+                <p class="synthesis-label">Earth</p>
+                <p class="synthesis-value">2 Planets</p>
+            </div>
+            <div class="synthesis-item">
+                <p class="synthesis-label">Air</p>
+                <p class="synthesis-value">2 Planets</p>
+            </div>
+            <div class="synthesis-item" style="background: rgba(107, 28, 28, 0.2); border-color: rgba(107, 28, 28, 0.3);">
+                <p class="synthesis-label">Water</p>
+                <p class="synthesis-value" style="color: #C66;">0 Planets ⚠</p>
+            </div>
+        </div>
+
+        <div class="clinical-box warning">
+            <p class="clinical-box-title">No Water — Primary Imbalance</p>
+            <p>The complete absence of water planets is a <strong>major psychological pattern</strong>. Water represents emotions, empathy, intuition, and flow. Without water, this person may struggle with deep emotional processing (feels uncomfortable), empathy (understands intellectually but doesn't FEEL), psychic/intuitive knowing (relies on logic instead), going with the flow (everything is effort), vulnerability (water equals permeability), and grief and sadness (fire/air wants to move on quickly).</p>
+        </div>
+
+        <h4>Compensation Patterns</h4>
+        <p>May intellectualize feelings (Jupiter in Aquarius). May dramatize emotions (Leo Moon) instead of truly feeling them. May use action (fire) to avoid feeling (water). May seem emotionally defended or unavailable.</p>
+
+        <h3>Modal Distribution</h3>
+        <div class="synthesis-grid">
+            <div class="synthesis-item">
+                <p class="synthesis-label">Cardinal</p>
+                <p class="synthesis-value">4 Planets</p>
+            </div>
+            <div class="synthesis-item">
+                <p class="synthesis-label">Fixed</p>
+                <p class="synthesis-value">4 Planets</p>
+            </div>
+            <div class="synthesis-item">
+                <p class="synthesis-label">Mutable</p>
+                <p class="synthesis-value">2 Planets</p>
+            </div>
+        </div>
+
+        <p>Balanced cardinal and fixed emphasis means this person can <strong>start things</strong> (cardinal) and <strong>sustain things</strong> (fixed), but may struggle with <strong>changing course</strong> (low mutable). Stubborn but also initiating—can be contradictory. Once committed, very loyal.</p>
+    </section>
+
+    <div class="divider">✧</div>
+
+    <!-- SECTION 5: SYNTHESIS -->
+    <section id="synthesis" class="reveal">
+        <p class="section-number">Section V</p>
+        <h2>Synthesis & Clinical Priorities</h2>
+
+        <h3>Archetypal Profile</h3>
+        <div class="synthesis-grid">
+            <div class="synthesis-item">
+                <p class="synthesis-label">Core Identity</p>
+                <p class="synthesis-value">The Visible Leader</p>
+            </div>
+            <div class="synthesis-item" style="background: rgba(107, 28, 28, 0.15);">
+                <p class="synthesis-label">Primary Wound</p>
+                <p class="synthesis-value">Internalized Warrior</p>
+            </div>
+            <div class="synthesis-item" style="background: rgba(184, 115, 51, 0.12);">
+                <p class="synthesis-label">Secondary Wound</p>
+                <p class="synthesis-value">Obscured Mind</p>
+            </div>
+            <div class="synthesis-item" style="background: rgba(75, 0, 130, 0.12);">
+                <p class="synthesis-label">Primary Gift</p>
+                <p class="synthesis-value">Philosophical Protector</p>
+            </div>
+            <div class="synthesis-item">
+                <p class="synthesis-label">Missing Element</p>
+                <p class="synthesis-value">Water — Emotional Depth</p>
+            </div>
+            <div class="synthesis-item">
+                <p class="synthesis-label">Individuation Path</p>
+                <p class="synthesis-value">Release the Beast, Receive the Flow</p>
+            </div>
+        </div>
+
+        <h3>Jungian Analysis</h3>
+        <p><strong>PERSONA:</strong> Confident, visible, dramatic leader (Sun/Moon angular, Leo rising)</p>
+        <p><strong>SHADOW:</strong> Rage, perfectionism, self-attack (Mars retrograde in Virgo, out-of-sect); Intellectual self-doubt, feeling unheard (Mercury retrograde, under the beams)</p>
+        <p><strong>ANIMA/ANIMUS:</strong> Wounded feminine (Venus in detriment), intellectual masculine (Jupiter in Aquarius)</p>
+        <p><strong>SELF:</strong> Strong individuation drive (exalted Sun) but needs integration of feeling function and reclaiming obscured intellect</p>
+
+        <h3>Psychodynamic Formulation</h3>
+        <p>The central psychological tension is between <strong>power</strong> (exalted Sun, Leo Moon—"I am strong") and <strong>powerlessness</strong> (Mars retrograde—"I cannot act"). Defense structures include intellectualization (no water, Air Jupiter), reaction formation (Leo warmth covering rage), externalization (Mars in 3rd, anger at others/environment), and performance (Leo rising as mask).</p>
+
+        <h3>Therapeutic Priorities</h3>
+        <table class="treatment-table">
+            <tr>
+                <th>Priority</th>
+                <th>Focus Area</th>
+                <th>Clinical Manifestations</th>
+                <th>Treatment Approaches</th>
+            </tr>
+            <tr>
+                <td><span class="priority">1</span></td>
+                <td><strong>Mars Integration</strong></td>
+                <td>Anger turned inward, difficulty with assertion, sexual issues, perfectionism, passive-aggression</td>
+                <td>Somatic experiencing, anger expression practices, assertiveness training, compassion-focused therapy</td>
+            </tr>
+            <tr>
+                <td><span class="priority secondary">2</span></td>
+                <td><strong>Mercury Integration</strong></td>
+                <td>Intellectual self-doubt, feeling unheard, imposter syndrome, communication anxiety</td>
+                <td>Cognitive confidence building, validation, written expression, separating identity from intellect</td>
+            </tr>
+            <tr>
+                <td><span class="dignity-badge">3</span></td>
+                <td><strong>Emotional Depth</strong></td>
+                <td>Intellectualization, difficulty with empathy, discomfort with vulnerability</td>
+                <td>Emotion-focused therapy, emotional literacy, mindfulness, permission for vulnerability</td>
+            </tr>
+            <tr>
+                <td><span class="dignity-badge">4</span></td>
+                <td><strong>Relationship Patterns</strong></td>
+                <td>Avoidant attachment, difficulty receiving, competitive dynamics</td>
+                <td>Attachment-based therapy, vulnerability practices, receiving exercises</td>
+            </tr>
+            <tr>
+                <td><span class="dignity-badge">5</span></td>
+                <td><strong>Vocational Identity</strong></td>
+                <td>Career as make-or-break, needs meaningful visible work</td>
+                <td>Vocational counseling, values clarification, work as Self-expression</td>
+            </tr>
+        </table>
+    </section>
+
+    <div class="divider">✧</div>
+
+    <!-- SECTION 6: REMEDIATION -->
+    <section id="remediation" class="reveal">
+        <p class="section-number">Section VI</p>
+        <h2>Remediation Recommendations</h2>
+
+        <h3>Electional Astrology Applications</h3>
+        <p>Based on the chart's challenges and gifts, elect times that support the therapeutic work:</p>
+
+        <table class="treatment-table">
+            <tr>
+                <th>Focus</th>
+                <th>Optimal Elections</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td><strong>Mars Work</strong></td>
+                <td>Moon in fire signs; Mars angular; Tuesday practices; avoid Mars retrograde</td>
+                <td>Strengthen healthy assertion and anger expression</td>
+            </tr>
+            <tr>
+                <td><strong>Mercury Work</strong></td>
+                <td>Mercury in Gemini/Virgo; Mercury direct, swift, FREE from Sun's beams; Wednesday practices</td>
+                <td>Strengthen communication, clear thinking, being heard</td>
+            </tr>
+            <tr>
+                <td><strong>Emotional Development</strong></td>
+                <td>Moon in water signs (Cancer, Scorpio, Pisces); Neptune angular; Monday practices</td>
+                <td>Access feeling function, develop empathy</td>
+            </tr>
+            <tr>
+                <td><strong>Relationship Work</strong></td>
+                <td>Venus in Taurus/Libra or exalted in Pisces; Friday practices</td>
+                <td>Open receptivity, soften defenses</td>
+            </tr>
+            <tr>
+                <td><strong>Jupiter Strengthening</strong></td>
+                <td>Jupiter in Sagittarius/Pisces transits; Jupiter angular; Thursday practices</td>
+                <td>Amplify natural protective factors</td>
+            </tr>
+        </table>
+
+        <h3>Talismanic Recommendations</h3>
+        <div class="clinical-box">
+            <p class="clinical-box-title">Mars Remediation (Primary Need)</p>
+            <p><strong>Election:</strong> Mars in domicile (Aries or Scorpio), angular, direct motion</p>
+            <p><strong>Materia:</strong> Red stones (carnelian, garnet), iron, sharp or cutting objects</p>
+            <p><strong>Use:</strong> Wear during assertiveness practice and conflict navigation</p>
+        </div>
+
+        <div class="clinical-box">
+            <p class="clinical-box-title">Mercury Strengthening (Secondary Need)</p>
+            <p><strong>Election:</strong> Mercury in domicile (Gemini or Virgo), FREE from Sun's beams, direct and swift, angular</p>
+            <p><strong>Materia:</strong> Agate, citrine, quicksilver imagery, yellow/orange colors</p>
+            <p><strong>Use:</strong> Wear during important communications, presentations, writing</p>
+        </div>
+
+        <h3>Spiritual Practices by Planetary Day</h3>
+        <div class="day-grid">
+            <div class="day-card sunday">
+                <p class="day-name">Sunday — Sol</p>
+                <ul>
+                    <li>Creative self-expression</li>
+                    <li>Leadership practice</li>
+                    <li>Connecting with purpose</li>
+                    <li>Solar vitality activities</li>
+                </ul>
+            </div>
+            <div class="day-card monday">
+                <p class="day-name">Monday — Luna</p>
+                <ul>
+                    <li>Emotional check-in journaling</li>
+                    <li>Self-care and nurturing</li>
+                    <li>Mother archetype work</li>
+                    <li>Water-based practices</li>
+                </ul>
+            </div>
+            <div class="day-card tuesday">
+                <p class="day-name">Tuesday — Mars</p>
+                <ul>
+                    <li>Anger journaling or expression</li>
+                    <li>Physical exercise (martial)</li>
+                    <li>Assertiveness practice</li>
+                    <li>Setting boundaries</li>
+                </ul>
+            </div>
+            <div class="day-card wednesday">
+                <p class="day-name">Wednesday — Mercury ⚠</p>
+                <ul>
+                    <li>Journaling, writing</li>
+                    <li>Communication skill practice</li>
+                    <li>Practicing being heard</li>
+                    <li>Confidence in ideas work</li>
+                </ul>
+            </div>
+            <div class="day-card thursday">
+                <p class="day-name">Thursday — Jupiter</p>
+                <ul>
+                    <li>Gratitude practice</li>
+                    <li>Philosophical reading</li>
+                    <li>Connection with mentors</li>
+                    <li>Expanding perspective</li>
+                </ul>
+            </div>
+            <div class="day-card friday">
+                <p class="day-name">Friday — Venus</p>
+                <ul>
+                    <li>Aesthetic appreciation</li>
+                    <li>Relationship connection</li>
+                    <li>Self-pleasure and beauty</li>
+                    <li>Receiving practices</li>
+                </ul>
+            </div>
+            <div class="day-card saturday">
+                <p class="day-name">Saturday — Saturn</p>
+                <ul>
+                    <li>Structure and discipline</li>
+                    <li>Commitment work</li>
+                    <li>Working with limits</li>
+                    <li>Father archetype integration</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider">✧</div>
+
+    <!-- SECTION 7: PROGNOSIS -->
+    <section id="prognosis" class="reveal">
+        <p class="section-number">Section VII</p>
+        <h2>Prognostic Considerations</h2>
+
+        <h3>Protective Factors</h3>
+        <ul>
+            <li><strong>Strong Jupiter (in-sect, angular):</strong> Natural resilience and optimism, social support, philosophical perspective</li>
+            <li><strong>Exalted Sun:</strong> Good ego functions and reality testing, capacity for autonomy, strong sense of purpose</li>
+            <li><strong>Angular Planets:</strong> Cannot stay stuck in passive position, naturally moves toward expression</li>
+            <li><strong>Fire Emphasis:</strong> Natural enthusiasm and life force, resilience, creative energy</li>
+        </ul>
+
+        <h3>Risk Factors</h3>
+        <ul>
+            <li><strong>Mars Dysfunction:</strong> Depression risk (anger turned inward), self-harm potential, relationship violence, sexual compulsivity</li>
+            <li><strong>No Water Element:</strong> Difficulty with emotional intimacy, may seem defended, struggles with empathy</li>
+            <li><strong>Venus in Detriment:</strong> Relationship difficulties, avoidant attachment, may push away support</li>
+            <li><strong>Triple Retrograde:</strong> Rumination and obsessive thinking, difficulty moving forward</li>
+        </ul>
+
+        <div class="clinical-box insight">
+            <p class="clinical-box-title">Prognosis: Good to Excellent</p>
+            <p>The combination of strong ego functions (Sun), natural resilience (Jupiter), visible/public nature (angular planets), and fire vitality suggests this person has the <strong>resources to do deep therapeutic work</strong> and integrate their challenges.</p>
+        </div>
+
+        <h3>Key Success Factors</h3>
+        <ol>
+            <li>Finding right therapist (Jupiter in 7th)</li>
+            <li>Commitment to process (fixed emphasis)</li>
+            <li>Developing emotional literacy (water work)</li>
+            <li>Mars integration (somatic practices)</li>
+            <li>Allowing vulnerability (Venus healing)</li>
+        </ol>
+
+        <h3>Timeline</h3>
+        <table class="treatment-table">
+            <tr>
+                <th>Phase</th>
+                <th>Duration</th>
+                <th>Focus</th>
+            </tr>
+            <tr>
+                <td>Short-term</td>
+                <td>6-12 months</td>
+                <td>Symptom reduction, skill building</td>
+            </tr>
+            <tr>
+                <td>Medium-term</td>
+                <td>1-3 years</td>
+                <td>Mars integration, relationship healing</td>
+            </tr>
+            <tr>
+                <td>Long-term</td>
+                <td>3-5 years</td>
+                <td>Deep individuation, wholeness</td>
+            </tr>
+        </table>
+
+        <h3>Clinical Notes</h3>
+        <div class="clinical-box warning">
+            <p class="clinical-box-title">Red Flags to Monitor</p>
+            <ul>
+                <li>Self-harm ideation (Mars turned inward)</li>
+                <li>Substance use (Mars retrograde = compulsive patterns)</li>
+                <li>Relationship violence (Mars out-of-sect can explode)</li>
+                <li>Work addiction (10th house stellium)</li>
+                <li>Emotional burnout (fire without water)</li>
+            </ul>
+        </div>
+
+        <div class="clinical-box insight">
+            <p class="clinical-box-title">Positive Indicators</p>
+            <ul>
+                <li>Likely highly engaged in therapy (Mercury/10th emphasis)</li>
+                <li>Intellectually curious about psychology</li>
+                <li>Has supportive relationships (Jupiter in 7th)</li>
+                <li>Strong sense of meaning and purpose (Sun/Jupiter)</li>
+                <li>Creative and expressive (fire/Leo)</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="divider">✧</div>
+
+    <!-- PLANETARY SUMMARY TABLES -->
+    <section id="tables" class="reveal">
+        <p class="section-number">Appendix</p>
+        <h2>Chart Summary Tables</h2>
+
+        <h3>Planets in Houses</h3>
+        <div class="house-wheel-container">
+            <table class="house-table">
+                <thead>
+                    <tr>
+                        <th>House</th>
+                        <th>Sign</th>
+                        <th>Planets</th>
+                        <th>Significations</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="house-num">I</td>
+                        <td><span class="sign fire">♌ Leo</span></td>
+                        <td><span class="planet-pip moon">☽</span> Moon 6°35'</td>
+                        <td>Self, Body, Appearance, Vitality</td>
+                    </tr>
+                    <tr class="empty-house">
+                        <td class="house-num">II</td>
+                        <td><span class="sign fire">♍ Virgo</span></td>
+                        <td>—</td>
+                        <td>Resources, Values, Possessions</td>
+                    </tr>
+                    <tr>
+                        <td class="house-num">III</td>
+                        <td><span class="sign earth">♎ Libra</span></td>
+                        <td><span class="planet-pip mars">♂</span> Mars 17°58' ℞</td>
+                        <td>Communication, Siblings, Mind</td>
+                    </tr>
+                    <tr class="empty-house">
+                        <td class="house-num">IV</td>
+                        <td><span class="sign water">♏ Scorpio</span></td>
+                        <td>—</td>
+                        <td>Home, Family, Foundations</td>
+                    </tr>
+                    <tr class="empty-house">
+                        <td class="house-num">V</td>
+                        <td><span class="sign water">♐ Sagittarius</span></td>
+                        <td>—</td>
+                        <td>Creativity, Children, Pleasure</td>
+                    </tr>
+                    <tr>
+                        <td class="house-num">VI</td>
+                        <td><span class="sign earth">♑ Capricorn</span></td>
+                        <td><span class="planet-pip neptune">♆</span> Neptune</td>
+                        <td>Work, Health, Service</td>
+                    </tr>
+                    <tr>
+                        <td class="house-num">VII</td>
+                        <td><span class="sign air">♒ Aquarius</span></td>
+                        <td><span class="planet-pip jupiter">♃</span> Jupiter 17°44'</td>
+                        <td>Partnership, Marriage, Others</td>
+                    </tr>
+                    <tr class="empty-house">
+                        <td class="house-num">VIII</td>
+                        <td><span class="sign water">♓ Pisces</span></td>
+                        <td>—</td>
+                        <td>Death, Shared Resources, Transformation</td>
+                    </tr>
+                    <tr>
+                        <td class="house-num">IX</td>
+                        <td><span class="sign fire">♈ Aries</span></td>
+                        <td><span class="planet-pip saturn">♄</span> Saturn 12°21'</td>
+                        <td>Philosophy, Travel, Higher Learning</td>
+                    </tr>
+                    <tr class="stellium-row">
+                        <td class="house-num">X</td>
+                        <td><span class="sign fire">♈ Aries / ♉ Taurus</span></td>
+                        <td>
+                            <span class="planet-pip sun">☉</span> Sun 25°43' ♈<br>
+                            <span class="planet-pip venus">♀</span> Venus 29°09' ♈<br>
+                            <span class="planet-pip mercury">☿</span> Mercury 9°38' ♉ ℞
+                        </td>
+                        <td>Career, Public Image, Vocation</td>
+                    </tr>
+                    <tr class="empty-house">
+                        <td class="house-num">XI</td>
+                        <td><span class="sign earth">♉ Taurus</span></td>
+                        <td>—</td>
+                        <td>Friends, Groups, Aspirations</td>
+                    </tr>
+                    <tr class="empty-house">
+                        <td class="house-num">XII</td>
+                        <td><span class="sign air">♊ Gemini</span></td>
+                        <td>—</td>
+                        <td>Hidden, Isolation, Unconscious</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="divider-line"></div>
+
+        <h3>Essential Dignities Scorecard</h3>
+        <div class="scorecard-container">
+            <table class="scorecard">
+                <thead>
+                    <tr>
+                        <th>Planet</th>
+                        <th>Position</th>
+                        <th>Dom</th>
+                        <th>Exl</th>
+                        <th>Tri</th>
+                        <th>Ter</th>
+                        <th>Fac</th>
+                        <th>Det</th>
+                        <th>Fal</th>
+                        <th>Essential</th>
+                        <th>Accidental</th>
+                        <th class="total-col">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="strong-planet">
+                        <td class="planet-cell"><span class="planet-pip sun">☉</span> Sun</td>
+                        <td>25° ♈</td>
+                        <td>—</td>
+                        <td class="dignity-positive">+4</td>
+                        <td class="dignity-positive">+3</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td class="subtotal-positive">+11</td>
+                        <td class="subtotal-positive">+9</td>
+                        <td class="total-cell strong">+20</td>
+                    </tr>
+                    <tr>
+                        <td class="planet-cell"><span class="planet-pip moon">☽</span> Moon</td>
+                        <td>6° ♌</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td class="dignity-positive">+3</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td class="subtotal-positive">+3</td>
+                        <td class="subtotal-positive">+7</td>
+                        <td class="total-cell moderate">+10</td>
+                    </tr>
+                    <tr class="weak-planet">
+                        <td class="planet-cell"><span class="planet-pip mercury">☿</span> Mercury ℞</td>
+                        <td>9° ♉</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td class="dignity-positive">+3</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td class="subtotal-positive">+3</td>
+                        <td class="subtotal-negative">-4</td>
+                        <td class="total-cell weak">-1</td>
+                    </tr>
+                    <tr class="weak-planet">
+                        <td class="planet-cell"><span class="planet-pip venus">♀</span> Venus</td>
+                        <td>29° ♈</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td class="dignity-negative">-5</td>
+                        <td>—</td>
+                        <td class="subtotal-negative">-5</td>
+                        <td class="subtotal-positive">+7</td>
+                        <td class="total-cell weak">+2</td>
+                    </tr>
+                    <tr class="challenge-planet">
+                        <td class="planet-cell"><span class="planet-pip mars">♂</span> Mars ℞</td>
+                        <td>17° ♍</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td class="dignity-positive">+3</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td class="subtotal-positive">+3</td>
+                        <td class="subtotal-negative">-2</td>
+                        <td class="total-cell challenge">+1</td>
+                    </tr>
+                    <tr class="strong-planet">
+                        <td class="planet-cell"><span class="planet-pip jupiter">♃</span> Jupiter</td>
+                        <td>17° ♒</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td class="dignity-positive">+3</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td class="subtotal-positive">+3</td>
+                        <td class="subtotal-positive">+9</td>
+                        <td class="total-cell strong">+12</td>
+                    </tr>
+                    <tr>
+                        <td class="planet-cell"><span class="planet-pip saturn">♄</span> Saturn</td>
+                        <td>12° ♈</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td class="dignity-negative">-4</td>
+                        <td class="subtotal-negative">-4</td>
+                        <td class="subtotal-positive">+7</td>
+                        <td class="total-cell moderate">+3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="scorecard-legend">
+            <div class="legend-item">
+                <span class="legend-color strong"></span>
+                <span>Strong (+10 or higher)</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color moderate"></span>
+                <span>Moderate (+3 to +9)</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color weak"></span>
+                <span>Weak (-2 to +2)</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color challenge"></span>
+                <span>Challenge (Primary therapeutic focus)</span>
+            </div>
+        </div>
+
+        <div class="scorecard-key">
+            <h4>Dignity Key</h4>
+            <div class="key-grid">
+                <div><strong>Dom</strong> = Domicile (+5)</div>
+                <div><strong>Exl</strong> = Exaltation (+4)</div>
+                <div><strong>Tri</strong> = Triplicity (+3)</div>
+                <div><strong>Ter</strong> = Term (+2)</div>
+                <div><strong>Fac</strong> = Face (+1)</div>
+                <div><strong>Det</strong> = Detriment (-5)</div>
+                <div><strong>Fal</strong> = Fall (-4)</div>
+                <div><strong>℞</strong> = Retrograde (-5)</div>
+            </div>
+        </div>
+
+        <div class="divider-line"></div>
+
+        <h3>Sect Analysis Summary</h3>
+        <div class="sect-summary">
+            <div class="sect-column in-sect">
+                <h4>☉ In-Sect (Day Team)</h4>
+                <div class="sect-planet">
+                    <span class="planet-pip sun">☉</span>
+                    <span>Sun — Sect Light</span>
+                    <span class="sect-status">✓ LEADER</span>
+                </div>
+                <div class="sect-planet">
+                    <span class="planet-pip jupiter">♃</span>
+                    <span>Jupiter — Benefic</span>
+                    <span class="sect-status">✓ FULL POWER</span>
+                </div>
+                <div class="sect-planet">
+                    <span class="planet-pip saturn">♄</span>
+                    <span>Saturn — Malefic</span>
+                    <span class="sect-status">✓ MODERATED</span>
+                </div>
+            </div>
+            <div class="sect-column out-sect">
+                <h4>☽ Out-of-Sect (Night Team)</h4>
+                <div class="sect-planet">
+                    <span class="planet-pip moon">☽</span>
+                    <span>Moon — Sect Light</span>
+                    <span class="sect-status">⚠ CHALLENGED</span>
+                </div>
+                <div class="sect-planet">
+                    <span class="planet-pip venus">♀</span>
+                    <span>Venus — Benefic</span>
+                    <span class="sect-status">⚠ WEAKENED</span>
+                </div>
+                <div class="sect-planet challenge">
+                    <span class="planet-pip mars">♂</span>
+                    <span>Mars — Malefic</span>
+                    <span class="sect-status">✗ MAXIMUM</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider-line"></div>
+
+    <section class="reveal">
+        <h3>Assessment Completion</h3>
+        <p><strong>Date:</strong> November 21, 2025</p>
+        <p><strong>Therapist:</strong> Brian Nuckols, MA, LPC</p>
+
+        <h4>Next Steps</h4>
+        <ol>
+            <li>Review assessment with client</li>
+            <li>Prioritize treatment goals collaboratively</li>
+            <li>Develop election schedule for key interventions</li>
+            <li>Recommend initial talismanic support (Mars remediation)</li>
+            <li>Establish baseline measures for tracking progress</li>
+        </ol>
+
+        <div class="quote-block" style="margin-top: 3rem;">
+            "The symbols of the self arise in the depths of the body and express its materiality every bit as much as the structure of the perceiving consciousness. The symbol is thus a living body."
+            <cite>— C.G. Jung, CW 9ii ¶291</cite>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <svg class="footer-sigil" viewBox="0 0 60 60">
+        <circle cx="30" cy="30" r="20" fill="none" stroke="#A6893A" stroke-width="1" opacity="0.5"/>
+        <circle cx="30" cy="30" r="5" fill="#A6893A" opacity="0.3"/>
+        <path d="M30 5 L30 15 M30 45 L30 55 M5 30 L15 30 M45 30 L55 30" stroke="#A6893A" stroke-width="0.5" opacity="0.4"/>
+    </svg>
+    <p><em>This assessment integrates classical astrological dignity analysis with Jungian depth psychology for therapeutic application. It is intended as a supplement to evidence-based psychodynamic psychotherapy and should not replace clinical judgment or standard assessment procedures.</em></p>
+    <p style="margin-top: 1rem; opacity: 0.6;">"Sigils are monograms of thought, for the government of energy." — A.O.S.</p>
+</footer>
+
+<script>
+    // Scroll reveal animation
+    const reveals = document.querySelectorAll('.reveal');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    reveals.forEach(el => observer.observe(el));
+
+    // Debug: Log when nav links are clicked
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            console.log('Nav link clicked');
+        });
+    });
+</script>
+
+</body>
+</html>
